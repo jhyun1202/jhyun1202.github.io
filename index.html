@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeonghyun Lee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #2a2a2a;
+            color: #e8e8e8;
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #1f1f1f;
+            padding: 1.2rem 0;
+            z-index: 1000;
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        nav .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #e8e8e8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: #b8b8b8;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: #e8e8e8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 6rem 2rem 3rem;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+            animation: fadeIn 0.4s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Home Page */
+        .intro {
+            margin-bottom: 3rem;
+        }
+
+        .intro h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #e8e8e8;
+        }
+
+        .intro .subtitle {
+            font-size: 1.2rem;
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.05rem;
+            color: #c8c8c8;
+            margin-bottom: 1rem;
+            max-width: 750px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #888;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #e8e8e8;
+        }
+
+        .updates {
+            margin-top: 4rem;
+        }
+
+        .updates h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #e8e8e8;
+            font-weight: 600;
+        }
+
+        .update-item {
+            background: #333;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #666;
+        }
+
+        .update-item .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .update-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #e8e8e8;
+        }
+
+        .update-item p {
+            color: #b8b8b8;
+            font-size: 0.95rem;
+        }
+
+        .update-item a {
+            color: #888;
+            text-decoration: underline;
+        }
+
+        .update-item a:hover {
+            color: #e8e8e8;
+        }
+
+        /* Projects Page */
+        .project-card {
+            background: #333;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border-left: 3px solid #666;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #e8e8e8;
+        }
+
+        .project-card .tag {
+            display: inline-block;
+            background: #444;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            color: #aaa;
+        }
+
+        .project-card p {
+            color: #b8b8b8;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            color: #888;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #3a3a3a;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .project-links a:hover {
+            background: #444;
+            color: #e8e8e8;
+        }
+
+        /* Research Page */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .research-card {
+            background: #333;
+            padding: 1.8rem;
+            border-radius: 8px;
+            border-left: 3px solid #666;
+            transition: all 0.3s;
+        }
+
+        .research-card:hover {
+            border-left-color: #888;
+            background: #383838;
+        }
+
+        .research-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.8rem;
+            color: #e8e8e8;
+        }
+
+        .research-card p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #e8e8e8;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 4rem;
+            border-top: 1px solid #3a3a3a;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            .intro h1 {
+                font-size: 2.2rem;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Jeonghyun Lee</div>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="intro">
+                <h1>Jeonghyun Lee</h1>
+                <div class="subtitle">Aerospace Engineering & Physics</div>
+                <p>I'm a student at Korean Minjok Leadership Academy with a passion for rocket propulsion and experimental physics. I lead BUZ Aerospace, where we've secured over $640K in funding to build rockets and establish a school makerspace.</p>
+                <p>My research focuses on hybrid rocket engines and acoustic sensors for aerospace applications. I'm also captain of my school's lacrosse team and serve communities in Laos through appropriate technology projects.</p>
+                <p>Currently applying to universities to pursue aerospace engineering and physics. My goal is to contribute to the future of space exploration through innovative propulsion systems.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/jhyun1202" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lee-jeonghyun-708a5033b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jeonghyun739@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/jeonghyun739/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="updates">
+                <h2>Recent Updates</h2>
+                
+                <div class="update-item">
+                    <div class="date">October 2024</div>
+                    <h3>Hybrid Rocket Engine Paper Submitted</h3>
+                    <p>Submitted first-author paper on development of Korea's second end-burning hybrid rocket engine to academic journal. Research funded by $62K grant from school.</p>
+                </div>
+
+                <div class="update-item">
+                    <div class="date">October 2024</div>
+                    <h3>Featured in Local News</h3>
+                    <p>BUZ Aerospace project featured in Gangwon State News and Veritas-a for successful rocket launches and makerspace establishment. <a href="https://www.kwnews.co.kr/page/view/2025100111404844847" target="_blank">Read article</a></p>
+                </div>
+
+                <div class="update-item">
+                    <div class="date">2024</div>
+                    <h3>National Science Fair - Minister's Award</h3>
+                    <p>Received Minister's Award and 1st Place (×2) at National Science Fair in Physics Division for research projects.</p>
+                </div>
+
+                <div class="update-item">
+                    <div class="date">2024</div>
+                    <h3>Korean Young Physicists' Tournament</h3>
+                    <p>Team won Silver and Bronze medals at national physics competition focusing on open-ended experimental problems.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <h1 class="page-title">Projects</h1>
+
+            <div class="project-card">
+                <span class="tag">First Author - Journal Submitted</span>
+                <h3>Hybrid End-Burning Rocket Engine</h3>
+                <p><strong>My Role:</strong> Igniter development, ignition system design</p>
+                <p>Developed Korea's second end-burning hybrid rocket engine with $62K funding from school to establish dedicated Rocket Combustion Laboratory. Designed and constructed a novel ignition system that enables controlled end-burning combustion. This research explores innovative propulsion techniques to improve rocket efficiency and thrust control characteristics.</p>
+                <p>The project involved extensive testing of ignition sequences, thermal protection systems, and combustion chamber design. Successfully demonstrated stable end-burning combustion with reproducible results across multiple test fires.</p>
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=YQR4buIWb48" target="_blank"><i class="fab fa-youtube"></i> Watch Video</a>
+                    <a href="https://www.kwnews.co.kr/page/view/2025100111404844847" target="_blank"><i class="fas fa-newspaper"></i> Gangwon News</a>
+                    <a href="http://www.veritas-a.com/news/articleView.html?idxno=575592" target="_blank"><i class="fas fa-newspaper"></i> Veritas-a News</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Solid Rocket Motor (KNO₃ Fueled)</h3>
+                <p><strong>My Role:</strong> Fuel development, documentation</p>
+                <p>Led the design and development of a solid rocket motor using potassium nitrate composite propellant. Successfully launched rocket to altitudes exceeding 400 meters. This project was part of BUZ Aerospace's effort to establish practical rocketry capabilities at the school level.</p>
+                <p>Project required securing $580K in funding to build the school's first comprehensive makerspace facility. Developed fuel formulation protocols, casting procedures, and safety systems. The rocket's successful flight demonstrated the viability of student-led aerospace projects and was featured in official school promotional materials.</p>
+                <p>Documented entire development process through photography and videography to create educational resources for future student engineers.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i> Launch Video</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Acoustic Analysis of Fluid Motion in Non-Transparent Metallic Containers</h3>
+                <p><strong>Status:</strong> Ongoing Research</p>
+                <p>Developing acoustic-based sensor system to detect and analyze fuel sloshing behavior inside opaque metallic rocket tanks. This research addresses critical safety concerns in aerospace applications where visual monitoring is impossible during flight operations.</p>
+                <p>Built custom acoustic sensor arrays and signal processing algorithms to identify dangerous sloshing patterns that could destabilize rocket flight. Testing various tank geometries and fill levels to create comprehensive detection models.</p>
+                <p>Research has applications beyond rocketry, including commercial aviation fuel systems and industrial fluid transport.</p>
+            </div>
+        </div>
+
+        <!-- Research Page -->
+        <div id="research" class="page">
+            <h1 class="page-title">Research</h1>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Magnification and Resolution of a Water Droplet Lens</h3>
+                    <p>Studied how a single water droplet can act as a magnifying lens and investigated the factors that limit resolution when observing small details through droplet optics.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Maximum Launch Height of a Ping Pong Ball Rocket with Water Loading</h3>
+                    <p>Analyzed how water mass inside a ping pong ball rocket increases launch height by examining momentum transfer during different phases of flight.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Flight Dynamics and Return Mechanism of a Paper Boomerang</h3>
+                    <p>Investigated the aerodynamic principles behind paper boomerang flight, analyzing how rotation and torque interact to create the characteristic curved return path.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Wave Propagation and Dynamic Behavior in a Twisted Slinky</h3>
+                    <p>Studied wave mechanics in twisted slinky springs, examining how geometric constraints and tension affect wave velocity and propagation patterns.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Design Strategies for Maximizing the Efficiency of Rotary Pumps</h3>
+                    <p>Investigated how design parameters affect rotary pump performance by building and testing 3D-printed pump prototypes with varying geometries.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Design of Perforated Wind Turbine Blades for Noise Reduction</h3>
+                    <p>Experimentally studied wind turbine blade designs with strategic perforations to reduce aeroacoustic noise. Discovered that certain perforation patterns also improved power generation efficiency.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Development of Hybrid End-Burning Rocket Engine</h3>
+                    <p>First-author research on hybrid propulsion systems. Secured $62K funding to establish rocket combustion laboratory and developed Korea's second end-burning hybrid engine. Journal submitted.</p>
+                </div>
+
+                <div class="research-card">
+                    <h3>Acoustic Analysis of Fluid Motion in Metallic Containers</h3>
+                    <p>Developed sensor technology to detect dangerous fuel sloshing conditions inside opaque rocket tanks using acoustic signal processing. Addresses critical aerospace safety challenges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jeonghyun Lee</p>
+    </footer>
+
+    <script>
+        // Navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pages = document.querySelectorAll('.page');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                
+                // Update active states
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                pages.forEach(p => p.classList.remove('active'));
+                document.getElementById(targetId).classList.add('active');
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Handle initial hash
+        if (window.location.hash) {
+            const targetLink = document.querySelector(`a[href="${window.location.hash}"]`);
+            if (targetLink) {
+                targetLink.click();
+            }
+        }
+    </script>
+</body>
+</html>
