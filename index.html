@@ -98,20 +98,37 @@
             margin: 3rem 0;
         }
 
-        .social-links {
+        .info-links {
             display: flex;
-            gap: 1rem;
-            margin: 2rem 0;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
         }
 
-        .social-links a {
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.95rem;
+        }
+
+        .info-item i {
             color: #666;
-            font-size: 1.3rem;
-            transition: color 0.3s;
+            width: 16px;
+            text-align: center;
         }
 
-        .social-links a:hover {
-            color: #000;
+        .info-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        .info-item span {
+            color: #555;
         }
 
         h2 {
@@ -129,21 +146,16 @@
         }
 
         .update-item {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
         }
 
         .update-item .date {
             color: #888;
             font-size: 0.9rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .update-item h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .update-item p {
-            color: #555;
+            min-width: 100px;
+            flex-shrink: 0;
         }
 
         .update-item a {
@@ -236,6 +248,30 @@
             nav ul {
                 gap: 1.5rem;
             }
+
+            #home > div:first-child {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center;
+            }
+
+            #home > div:first-child img {
+                width: 150px !important;
+                height: 150px !important;
+            }
+
+            .info-links {
+                align-items: center;
+            }
+
+            .update-item {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .update-item .date {
+                min-width: auto;
+            }
         }
     </style>
 </head>
@@ -254,20 +290,52 @@
     <div class="container">
         <!-- Home Page -->
         <div id="home" class="page active">
-            <h1>Jeonghyun Lee</h1>
-            <div class="subtitle">Aerospace Engineering & Physics</div>
-            
-            <p>I'm a student at Korean Minjok Leadership Academy with a passion for rocket propulsion and experimental physics. I lead BUZ Aerospace, where we've secured over $640K in funding to build rockets and establish a school makerspace.</p>
-            
-            <p>My research focuses on hybrid rocket engines and acoustic sensors for aerospace applications. I'm also captain of my school's lacrosse team and serve communities in Laos through appropriate technology projects.</p>
-            
-            <p>Currently applying to universities to pursue aerospace engineering and physics. My goal is to contribute to the future of space exploration through innovative propulsion systems.</p>
-
-            <div class="social-links">
-                <a href="https://github.com/jhyun1202" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lee-jeonghyun-708a5033b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:jeonghyun739@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.instagram.com/jeonghyun739/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <div style="display: flex; gap: 2.5rem; align-items: flex-start; margin-bottom: 2rem;">
+                <div style="flex-shrink: 0;">
+                    <img src="profile.jpg" alt="Jeonghyun Lee" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    
+                    <h1 style="margin-bottom: 0.3rem;">Jeonghyun Lee</h1>
+                    <div class="subtitle" style="margin-bottom: 1.2rem;">Aerospace Engineering & Physics</div>
+                    
+                    <div class="info-links">
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span>Korean Minjok Leadership Academy</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gangwon-do, South Korea</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jeonghyun739@gmail.com">jeonghyun739@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/jhyun1202" target="_blank">GitHub</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/lee-jeonghyun-708a5033b/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/jeonghyun739/" target="_blank">Instagram</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://www.facebook.com/ijeonghyeon.597734" target="_blank">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="flex: 1; padding-top: 0.5rem;">
+                    <p>I'm a student at Korean Minjok Leadership Academy with a passion for rocket propulsion and experimental physics. I lead BUZ Aerospace, where we've secured over $640K in funding to build rockets and establish a school makerspace.</p>
+                    
+                    <p>My research focuses on hybrid rocket engines and acoustic sensors for aerospace applications. I'm also captain of my school's lacrosse team and serve communities in Laos through appropriate technology projects.</p>
+                    
+                    <p>Currently applying to universities to pursue aerospace engineering and physics. My goal is to contribute to the future of space exploration through innovative propulsion systems.</p>
+                </div>
             </div>
 
             <hr>
@@ -275,27 +343,23 @@
             <h2>news</h2>
 
             <div class="update-item">
-                <div class="date">October 2024</div>
-                <h3>Hybrid Rocket Engine Paper Submitted</h3>
-                <p>Submitted first-author paper on development of Korea's second end-burning hybrid rocket engine to academic journal. Research funded by $62K grant from school.</p>
+                <span class="date">October 2024</span>
+                Submitted first-author paper on hybrid end-burning rocket engine to academic journal
             </div>
 
             <div class="update-item">
-                <div class="date">October 2024</div>
-                <h3>Featured in Local News</h3>
-                <p>BUZ Aerospace project featured in Gangwon State News and Veritas-a for successful rocket launches and makerspace establishment. <a href="https://www.kwnews.co.kr/page/view/2025100111404844847" target="_blank">Read article</a></p>
+                <span class="date">October 2024</span>
+                Featured in <a href="https://www.kwnews.co.kr/page/view/2025100111404844847" target="_blank">Gangwon State News</a> and Veritas-a for BUZ Aerospace rocket launches
             </div>
 
             <div class="update-item">
-                <div class="date">2024</div>
-                <h3>National Science Fair - Minister's Award</h3>
-                <p>Received Minister's Award and 1st Place (×2) at National Science Fair in Physics Division for research projects.</p>
+                <span class="date">2024</span>
+                Received Minister's Award and 1st Place (×2) at National Science Fair (Physics Division)
             </div>
 
             <div class="update-item">
-                <div class="date">2024</div>
-                <h3>Korean Young Physicists' Tournament</h3>
-                <p>Team won Silver and Bronze medals at national physics competition focusing on open-ended experimental problems.</p>
+                <span class="date">2024</span>
+                Team Silver and Bronze medals at Korean Young Physicists' Tournament
             </div>
         </div>
 
