@@ -2,9 +2,9 @@
 layout: page
 title: Hybrid End-Burning Rocket Engine
 description: First-author research on Korea's second end-burning hybrid rocket engine
-img: assets/img/rocket.jpg
 importance: 1
-category: research
+category: BUZ-Aerospace
+date: 2026-01-01
 ---
 
 ## Overview

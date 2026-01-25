@@ -2,9 +2,9 @@
 layout: page
 title: Solid Rocket Motor
 description: KNO₃ fueled solid rocket achieving 400m+ altitude
-img: assets/img/solid_rocket.jpg
 importance: 2
-category: research
+category: BUZ-Aerospace
+date: 2025-01-01
 ---
 
 ## Overview
