@@ -15,7 +15,7 @@ nav_order: 2
 }
 
 .project-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--global-divider-color);
 }
@@ -27,7 +27,7 @@ nav_order: 2
 .project-title {
   font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-title a {
@@ -40,13 +40,14 @@ nav_order: 2
 }
 
 .project-description {
-  color: var(--global-text-color);
-  margin-bottom: 0.5rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.4rem;
   font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .project-meta {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--global-text-color-light);
   display: flex;
   align-items: center;
@@ -54,25 +55,15 @@ nav_order: 2
   flex-wrap: wrap;
 }
 
-.project-meta .year {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
+.project-meta .year,
 .project-meta .tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.25rem;
 }
 
-.project-meta .tag a {
+.project-meta .tag span {
   color: var(--global-text-color-light);
-  text-decoration: none;
-}
-
-.project-meta .tag a:hover {
-  color: var(--global-theme-color);
 }
 
 .project-meta .divider {
@@ -88,14 +79,9 @@ nav_order: 2
   </h3>
   <p class="project-description">First-author research on Korea's second end-burning hybrid rocket engine</p>
   <div class="project-meta">
-    <span class="year">
-      <i class="fa-solid fa-calendar fa-sm"></i> 2026
-    </span>
+    <span class="year">2026</span>
     <span class="divider">&middot;</span>
-    <span class="tag">
-      <i class="fa-solid fa-hashtag fa-sm"></i>
-      <a href="#">BUZ-Aerospace</a>
-    </span>
+    <span class="tag"><span>BUZ-Aerospace</span></span>
   </div>
 </li>
 
@@ -105,14 +91,9 @@ nav_order: 2
   </h3>
   <p class="project-description">KNO₃ fueled solid rocket achieving 400m+ altitude</p>
   <div class="project-meta">
-    <span class="year">
-      <i class="fa-solid fa-calendar fa-sm"></i> 2025
-    </span>
+    <span class="year">2025</span>
     <span class="divider">&middot;</span>
-    <span class="tag">
-      <i class="fa-solid fa-hashtag fa-sm"></i>
-      <a href="#">BUZ-Aerospace</a>
-    </span>
+    <span class="tag"><span>BUZ-Aerospace</span></span>
   </div>
 </li>
 

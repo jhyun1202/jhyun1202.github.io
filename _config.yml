@@ -6,8 +6,7 @@ title: blank # website title (if blank, full name will be used instead)
 first_name: Jeonghyun
 middle_name:
 last_name: Lee
-contact_note: >
-  Feel free to reach out via email.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Aerospace Engineering student at Korean Minjok Leadership Academy. Passionate about rocket propulsion and experimental physics.
 footer_text: >
