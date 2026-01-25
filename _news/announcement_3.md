@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-12-01
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Received **Minister's Award** and **1st Place (x2)** at National Science Fair (Physics Division). Also earned team Silver and Bronze medals at Korean Young Physicists' Tournament.
