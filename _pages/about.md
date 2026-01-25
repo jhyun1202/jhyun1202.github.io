@@ -3,11 +3,13 @@ layout: about
 title: about
 permalink: /
 subtitle: Aerospace Engineering | <a href='https://www.kmla.hs.kr/'>Korean Minjok Leadership Academy</a>
+nav: false
+nav_order: 1
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # rectangular with rounded corners
   more_info: >
     <p>Sejong-si, South Korea</p>
 
@@ -17,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
