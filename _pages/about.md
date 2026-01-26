@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Aerospace Engineering | <a href='https://minjok.hs.kr/'>Korean Minjok Leadership Academy</a>
+subtitle: Aerospace Engineering | <a href='https://www.minjok.hs.kr/'>Korean Minjok Leadership Academy</a>
 nav: false
 nav_order: 1
 
