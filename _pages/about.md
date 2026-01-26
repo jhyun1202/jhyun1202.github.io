@@ -32,9 +32,3 @@ I currently lead BUZ Aerospace, where I design and test hybrid rocket engines an
 Beyond research, I serve as captain of my school's lacrosse team and have participated in appropriate technology projects in Laos, experiences that shaped how I think about teamwork, responsibility, and engineering for impact rather than performance alone.
 
 I am currently applying to universities to study aerospace engineering and physics. My long-term goal is to contribute to the development of reliable and efficient propulsion systems that expand the possibilities of space exploration through careful experimentation and design.
-
----
-
-<p style="text-align: center; color: var(--global-text-color-light);">
-  <a href="mailto:jeonghyun739@gmail.com">jeonghyun739@gmail.com</a>
-</p>
