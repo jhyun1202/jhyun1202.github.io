@@ -138,14 +138,14 @@ nav_order: 1
   text-decoration: underline;
 }
 
-/* arXiv buttons */
-.arxiv-buttons {
+/* PDF buttons */
+.pdf-buttons {
   display: flex;
   gap: 0.4rem;
   margin-top: 0.3rem;
 }
 
-.arxiv-btn {
+.pdf-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
@@ -158,7 +158,7 @@ nav_order: 1
   transition: all 0.15s ease;
 }
 
-.arxiv-btn:hover {
+.pdf-btn:hover {
   background-color: var(--global-theme-color);
   color: white;
 }
@@ -244,27 +244,22 @@ nav_order: 1
   </div>
   <span class="filter-separator">|</span>
   <div class="filter-group" id="tag-filters">
-    <button class="filter-btn" data-tag="2025">#2025</button>
-    <button class="filter-btn" data-tag="2024">#2024</button>
     <button class="filter-btn" data-tag="BUZAerospace">#BUZAerospace</button>
-    <button class="filter-btn" data-tag="KYPT">#KYPT</button>
-    <button class="filter-btn" data-tag="rocket">#rocket</button>
+    <button class="filter-btn" data-tag="WingOfThoughts">#WingOfThoughts</button>
+    <button class="filter-btn" data-tag="Physics">#Physics</button>
+    <button class="filter-btn" data-tag="Rocket">#Rocket</button>
   </div>
 </div>
 
 <!-- Papers Section -->
 <h2 class="section-header" data-section="paper">Papers</h2>
 
-<div class="work-item" data-type="paper" data-tags="GangwonStateScienceFair NationalScienceFair 2025 acoustics fluid-dynamics">
+<div class="work-item" data-type="paper" data-tags="Physics">
   <div class="work-title">Acoustic Analysis of Fluid Motion in Metallic Containers</div>
   <div class="work-meta">Gangwon State Science Fair, National Science Fair &middot; 2025</div>
   <div class="work-collaborators">with Seongyul Choi, Seowoo Park</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('GangwonStateScienceFair')">#GangwonStateScienceFair</span>
-    <span class="tag" onclick="filterByTag('NationalScienceFair')">#NationalScienceFair</span>
-    <span class="tag" onclick="filterByTag('2025')">#2025</span>
-    <span class="tag" onclick="filterByTag('acoustics')">#acoustics</span>
-    <span class="tag" onclick="filterByTag('fluid-dynamics')">#fluid-dynamics</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -272,22 +267,19 @@ nav_order: 1
   <div class="abstract-content">
     <p>Developed sensor technology to detect dangerous fuel sloshing conditions inside opaque rocket tanks using acoustic signal processing. Addresses critical aerospace safety challenges.</p>
   </div>
-  <!-- TODO: Add arXiv links when available -->
-  <div class="arxiv-buttons">
-    <a href="#" class="arxiv-btn">arXiv (Original)</a>
-    <a href="#" class="arxiv-btn">arXiv (English)</a>
+  <!-- TODO: Add PDF links when available -->
+  <div class="pdf-buttons">
+    <a href="#" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="#" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
-<div class="work-item" data-type="paper" data-tags="KSEF 2024 aeroacoustics wind-turbine">
+<div class="work-item" data-type="paper" data-tags="Physics">
   <div class="work-title">Design of Perforated Wind Turbine Blades for Noise Reduction</div>
   <div class="work-meta">Korea Science & Engineering Fair (KSEF) &middot; 2024</div>
   <div class="work-collaborators">with Seongyul Choi</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('KSEF')">#KSEF</span>
-    <span class="tag" onclick="filterByTag('2024')">#2024</span>
-    <span class="tag" onclick="filterByTag('aeroacoustics')">#aeroacoustics</span>
-    <span class="tag" onclick="filterByTag('wind-turbine')">#wind-turbine</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -295,23 +287,18 @@ nav_order: 1
   <div class="abstract-content">
     <p>Experimentally studied wind turbine blade designs with strategic perforations to reduce aeroacoustic noise. Discovered that certain perforation patterns also improved power generation efficiency.</p>
   </div>
-  <!-- TODO: Add arXiv links when available -->
-  <div class="arxiv-buttons">
-    <a href="#" class="arxiv-btn">arXiv (Original)</a>
-    <a href="#" class="arxiv-btn">arXiv (English)</a>
+  <div class="pdf-buttons">
+    <a href="https://drive.google.com/file/d/1QFs-XbIajMgKSUkPurV2NiE6L7ETvKcF/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="https://drive.google.com/file/d/1QFs-XbIajMgKSUkPurV2NiE6L7ETvKcF/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
-<div class="work-item" data-type="paper" data-tags="GangwonStateScienceFair NationalScienceFair 2024 fluid-dynamics pumps">
+<div class="work-item" data-type="paper" data-tags="Physics">
   <div class="work-title">Design Strategies for Maximizing the Efficiency of Rotary Pumps</div>
   <div class="work-meta">Gangwon State Science Fair, National Science Fair &middot; 2024</div>
   <div class="work-collaborators">with Chanmin Chung</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('GangwonStateScienceFair')">#GangwonStateScienceFair</span>
-    <span class="tag" onclick="filterByTag('NationalScienceFair')">#NationalScienceFair</span>
-    <span class="tag" onclick="filterByTag('2024')">#2024</span>
-    <span class="tag" onclick="filterByTag('fluid-dynamics')">#fluid-dynamics</span>
-    <span class="tag" onclick="filterByTag('pumps')">#pumps</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -319,17 +306,17 @@ nav_order: 1
   <div class="abstract-content">
     <p>Investigated how design parameters affect rotary pump performance by building and testing 3D-printed pump prototypes with varying geometries.</p>
   </div>
-  <!-- TODO: Add arXiv links when available -->
-  <div class="arxiv-buttons">
-    <a href="#" class="arxiv-btn">arXiv (Original)</a>
-    <a href="#" class="arxiv-btn">arXiv (English)</a>
+  <!-- TODO: Add PDF links when available -->
+  <div class="pdf-buttons">
+    <a href="#" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="#" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
 <!-- Projects Section -->
 <h2 class="section-header" data-section="project">Projects</h2>
 
-<div class="work-item" data-type="project" data-tags="BUZAerospace 2025 2026 rocket propulsion hybrid-rocket">
+<div class="work-item" data-type="project" data-tags="BUZAerospace Rocket">
   <div class="work-title">
     <a href="{{ '/projects/1_project/' | relative_url }}">Hybrid End-Burning Rocket Engine</a>
     <span class="status-badge">Journal Submitted</span>
@@ -339,11 +326,7 @@ nav_order: 1
   <div class="work-collaborators">with Changun Jeong, Chanmin Chung, Seorak Hong</div>
   <div class="work-tags">
     <span class="tag" onclick="filterByTag('BUZAerospace')">#BUZAerospace</span>
-    <span class="tag" onclick="filterByTag('2025')">#2025</span>
-    <span class="tag" onclick="filterByTag('2026')">#2026</span>
-    <span class="tag" onclick="filterByTag('rocket')">#rocket</span>
-    <span class="tag" onclick="filterByTag('propulsion')">#propulsion</span>
-    <span class="tag" onclick="filterByTag('hybrid-rocket')">#hybrid-rocket</span>
+    <span class="tag" onclick="filterByTag('Rocket')">#Rocket</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Details
@@ -353,7 +336,7 @@ nav_order: 1
   </div>
 </div>
 
-<div class="work-item" data-type="project" data-tags="BUZAerospace 2025 rocket solid-rocket">
+<div class="work-item" data-type="project" data-tags="BUZAerospace Rocket">
   <div class="work-title">
     <a href="{{ '/projects/2_project/' | relative_url }}">Solid Rocket Motor</a>
   </div>
@@ -362,9 +345,7 @@ nav_order: 1
   <div class="work-collaborators">with Minjae Kim, Sungjoo Kim, Chanmin Chung, Changun Jeong, Sangyeon Moon</div>
   <div class="work-tags">
     <span class="tag" onclick="filterByTag('BUZAerospace')">#BUZAerospace</span>
-    <span class="tag" onclick="filterByTag('2025')">#2025</span>
-    <span class="tag" onclick="filterByTag('rocket')">#rocket</span>
-    <span class="tag" onclick="filterByTag('solid-rocket')">#solid-rocket</span>
+    <span class="tag" onclick="filterByTag('Rocket')">#Rocket</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Details
@@ -374,14 +355,12 @@ nav_order: 1
   </div>
 </div>
 
-<div class="work-item" data-type="project" data-tags="KYPT WingOfThoughts 2025 aerodynamics">
+<div class="work-item" data-type="project" data-tags="WingOfThoughts Physics">
   <div class="work-title">Flight Dynamics and Return Mechanism of a Paper Boomerang</div>
   <div class="work-meta">Korean Youth Physicists Tournament (KYPT) &middot; 2025</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('KYPT')">#KYPT</span>
     <span class="tag" onclick="filterByTag('WingOfThoughts')">#WingOfThoughts</span>
-    <span class="tag" onclick="filterByTag('2025')">#2025</span>
-    <span class="tag" onclick="filterByTag('aerodynamics')">#aerodynamics</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -391,14 +370,12 @@ nav_order: 1
   </div>
 </div>
 
-<div class="work-item" data-type="project" data-tags="KYPT WingOfThoughts 2025 wave-mechanics">
+<div class="work-item" data-type="project" data-tags="WingOfThoughts Physics">
   <div class="work-title">Wave Propagation and Dynamic Behavior in a Twisted Slinky</div>
   <div class="work-meta">Korean Youth Physicists Tournament (KYPT) &middot; 2025</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('KYPT')">#KYPT</span>
     <span class="tag" onclick="filterByTag('WingOfThoughts')">#WingOfThoughts</span>
-    <span class="tag" onclick="filterByTag('2025')">#2025</span>
-    <span class="tag" onclick="filterByTag('wave-mechanics')">#wave-mechanics</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -408,15 +385,13 @@ nav_order: 1
   </div>
 </div>
 
-<div class="work-item" data-type="project" data-tags="KYPT WingOfThoughts 2024 rocket fluid-dynamics">
+<div class="work-item" data-type="project" data-tags="WingOfThoughts Physics Rocket">
   <div class="work-title">Maximum Launch Height of a Ping Pong Ball Rocket with Water Loading</div>
   <div class="work-meta">Korean Youth Physicists Tournament (KYPT) &middot; 2024</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('KYPT')">#KYPT</span>
     <span class="tag" onclick="filterByTag('WingOfThoughts')">#WingOfThoughts</span>
-    <span class="tag" onclick="filterByTag('2024')">#2024</span>
-    <span class="tag" onclick="filterByTag('rocket')">#rocket</span>
-    <span class="tag" onclick="filterByTag('fluid-dynamics')">#fluid-dynamics</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
+    <span class="tag" onclick="filterByTag('Rocket')">#Rocket</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
@@ -426,14 +401,12 @@ nav_order: 1
   </div>
 </div>
 
-<div class="work-item" data-type="project" data-tags="KYPT WingOfThoughts 2024 optics">
+<div class="work-item" data-type="project" data-tags="WingOfThoughts Physics">
   <div class="work-title">Magnification and Resolution of a Water Droplet Lens</div>
   <div class="work-meta">Korean Youth Physicists Tournament (KYPT) &middot; 2024</div>
   <div class="work-tags">
-    <span class="tag" onclick="filterByTag('KYPT')">#KYPT</span>
     <span class="tag" onclick="filterByTag('WingOfThoughts')">#WingOfThoughts</span>
-    <span class="tag" onclick="filterByTag('2024')">#2024</span>
-    <span class="tag" onclick="filterByTag('optics')">#optics</span>
+    <span class="tag" onclick="filterByTag('Physics')">#Physics</span>
   </div>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">
     <span class="arrow">&#9654;</span> Abstract
