@@ -9,19 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research",
-          title: "research",
-          description: "Physics research and experiments",
+  },{id: "nav-work",
+          title: "work",
+          description: "Research papers and engineering projects",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/research/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Rocket propulsion and aerospace engineering projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/work/";
           },
         },{id: "nav-gallery",
           title: "gallery",
