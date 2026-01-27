@@ -288,7 +288,7 @@ nav_order: 1
     <p>Experimentally studied wind turbine blade designs with strategic perforations to reduce aeroacoustic noise. Discovered that certain perforation patterns also improved power generation efficiency.</p>
   </div>
   <div class="pdf-buttons">
-    <a href="https://drive.google.com/file/d/1QFs-XbIajMgKSUkPurV2NiE6L7ETvKcF/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="https://drive.google.com/file/d/1PjPqvvv0hASVslfrLPasnpYpDyM6TRhJ/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
     <a href="https://drive.google.com/file/d/1QFs-XbIajMgKSUkPurV2NiE6L7ETvKcF/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
