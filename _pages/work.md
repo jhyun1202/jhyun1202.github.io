@@ -267,10 +267,9 @@ nav_order: 1
   <div class="abstract-content">
     <p>Developed sensor technology to detect dangerous fuel sloshing conditions inside opaque rocket tanks using acoustic signal processing. Addresses critical aerospace safety challenges.</p>
   </div>
-  <!-- TODO: Add PDF links when available -->
   <div class="pdf-buttons">
-    <a href="#" class="pdf-btn" target="_blank">PDF (KOR)</a>
-    <a href="#" class="pdf-btn" target="_blank">PDF (ENG)</a>
+    <a href="https://drive.google.com/file/d/1b0ThIXqan9MiUP59GYbPCDBFUVVFGIK8/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="https://drive.google.com/file/d/113AevNhUoaY6p7MTlK9rHvI8BRWT-N44/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
@@ -308,7 +307,7 @@ nav_order: 1
   </div>
   <div class="pdf-buttons">
     <a href="https://drive.google.com/file/d/1SoCtBaJZQl8KSXEopuBgVoZ2QQHL8ZIv/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
-    <a href="https://drive.google.com/file/d/1rAHVcParHESC-Hvq-fnlB435P14QJvce/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
+    <a href="https://drive.google.com/file/d/1mQ5uRU9UbUfOgASRST0WKA7TZYz8a-wq/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
