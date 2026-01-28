@@ -306,10 +306,9 @@ nav_order: 1
   <div class="abstract-content">
     <p>Investigated how design parameters affect rotary pump performance by building and testing 3D-printed pump prototypes with varying geometries.</p>
   </div>
-  <!-- TODO: Add PDF links when available -->
   <div class="pdf-buttons">
-    <a href="#" class="pdf-btn" target="_blank">PDF (KOR)</a>
-    <a href="#" class="pdf-btn" target="_blank">PDF (ENG)</a>
+    <a href="https://drive.google.com/file/d/1SoCtBaJZQl8KSXEopuBgVoZ2QQHL8ZIv/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (KOR)</a>
+    <a href="https://drive.google.com/file/d/1rAHVcParHESC-Hvq-fnlB435P14QJvce/view?usp=drive_link" class="pdf-btn" target="_blank">PDF (ENG)</a>
   </div>
 </div>
 
