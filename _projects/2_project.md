@@ -8,11 +8,32 @@ date: 2025-01-01
 ---
 
 <style>
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .project-content h2 { margin-top: 1.5rem; margin-bottom: 0.75rem; }
 .project-content p { margin-bottom: 0.75rem; line-height: 1.6; }
 .project-content ul { margin-bottom: 0.75rem; }
 .project-content li { margin-bottom: 0.25rem; }
 </style>
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/wfmlnjPGr_E" allowfullscreen></iframe>
+</div>
 
 <div class="project-content" markdown="1">
 

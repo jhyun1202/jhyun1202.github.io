@@ -317,7 +317,7 @@ nav_order: 1
 <div class="work-item" data-type="project" data-tags="BUZAerospace Rocket">
   <div class="work-title">
     <a href="{{ '/projects/1_project/' | relative_url }}">Hybrid End-Burning Rocket Engine</a>
-    <span class="status-badge">Journal Submitted</span>
+    <span class="status-badge">KSME 2025 Submitted</span>
   </div>
   <div class="work-desc">Korea's second end-burning hybrid rocket engine with $62K funding for dedicated Rocket Combustion Laboratory</div>
   <div class="work-meta">BUZ Aerospace &middot; 2025–2026</div>

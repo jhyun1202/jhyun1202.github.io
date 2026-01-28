@@ -8,11 +8,43 @@ date: 2026-01-01
 ---
 
 <style>
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .project-content h2 { margin-top: 1.5rem; margin-bottom: 0.75rem; }
 .project-content p { margin-bottom: 0.75rem; line-height: 1.6; }
 .project-content ul { margin-bottom: 0.75rem; }
 .project-content li { margin-bottom: 0.25rem; }
+.status-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background-color: var(--global-theme-color);
+  color: white;
+  margin-bottom: 1rem;
+}
 </style>
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/YQR4buIWb48" allowfullscreen></iframe>
+</div>
+
+<span class="status-badge">KSME 2025 Submitted (First Author)</span>
 
 <div class="project-content" markdown="1">
 
@@ -29,10 +61,7 @@ Developed Korea's second end-burning hybrid rocket engine with $62K funding from
 Successfully demonstrated stable end-burning combustion with reproducible results across multiple test fires. The project involved extensive testing of ignition sequences, thermal protection systems, and combustion chamber design.
 
 ## Media Coverage
-- [Watch Video on YouTube](https://www.youtube.com/watch?v=YQR4buIWb48)
 - [Gangwon State News](https://www.kwnews.co.kr/page/view/2025100111404844847)
 - [Veritas-a News](http://www.veritas-a.com/news/articleView.html?idxno=575592)
-
-**Status:** Journal Submitted (First Author)
 
 </div>
